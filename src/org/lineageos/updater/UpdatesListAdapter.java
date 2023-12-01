@@ -173,7 +173,7 @@ public class UpdatesListAdapter extends RecyclerView.Adapter<UpdatesListAdapter.
                         R.string.list_download_progress_eta_newer, downloaded, total, etaString));
             } else {
                 viewHolder.mProgressText.setText(mActivity.getString(
-                        R.string.list_download_progress_new, downloaded, total));
+                        R.string.list_download_progress_newer, downloaded, total));
             }
             setButtonAction(viewHolder.mAction, Action.PAUSE, downloadId, true);
             viewHolder.mProgressBar.setIndeterminate(update.getStatus() == UpdateStatus.STARTING);
